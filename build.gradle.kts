@@ -8,6 +8,5 @@ repositories {
 }
 
 dependencies {
-    implementation("io.ktor:ktor-client-core:1.6.7")
-    implementation("io.ktor:ktor-client-cio:1.6.7")
+    implementation("com.squareup.okio:okio:3.0.0")
 }

@@ -1,10 +1,6 @@
-import io.ktor.client.*
-import io.ktor.client.engine.cio.*
-import io.ktor.client.request.*
-import io.ktor.client.statement.*
+import okio.ByteString.Companion.encodeUtf8
 
-suspend fun main() = run {
-    val client = HttpClient(CIO)
-    val response = client.get<HttpResponse>("https://ktor.io/")
-    println(response.status)
+fun main() = run {
+    println("hello, world".encodeUtf8().md5().hex())
+
 }
