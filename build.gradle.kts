@@ -3,6 +3,7 @@ plugins {
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
@@ -17,5 +18,5 @@ application {
 }
 
 dependencies {
-    implementation("com.squareup.okio:okio:3.0.0")
+    implementation("com.jamesward:kmp-lib-test:0.0.1")
 }
